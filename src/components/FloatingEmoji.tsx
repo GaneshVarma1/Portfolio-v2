@@ -1,5 +1,4 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 interface FloatingEmojiProps {
   emoji: string;
@@ -8,7 +7,12 @@ interface FloatingEmojiProps {
   initialPosition: { x: number; y: number };
 }
 
-export function FloatingEmoji({ emoji, delay, duration, initialPosition }: FloatingEmojiProps) {
+export function FloatingEmoji({
+  emoji,
+  delay,
+  duration,
+  initialPosition,
+}: FloatingEmojiProps) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0 }}
