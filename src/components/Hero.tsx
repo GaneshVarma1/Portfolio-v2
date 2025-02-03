@@ -65,7 +65,7 @@ export function Hero() {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="w-full md:w-1/2 text-gray-900 dark:text-white space-y-8"
+            className="w-full md:w-1/2 text-gray-900 dark:text-white space-y-4"
           >
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               Hi <WavingHand />, This is{" "}
@@ -73,8 +73,20 @@ export function Hero() {
                 Sri Ganesh Shiramshetty
               </span>
             </h1>
-
-            <p className="text-xl text-gray-700 dark:text-gray-300">
+            <h4 className="text-xl text-gray-700 dark:text-gray-300 flex items-center flex-wrap gap-x-2 gap-y-1">
+              Senior Software Engineer at{" "}
+              <LinkPreview
+                url="https://reactwind.com"
+                className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
+                isStatic={true}
+                imageSrc="https://i.postimg.cc/nCMcx58c/Screenshot-2025-01-15-at-6-16-37-PM.png"
+                width={200}
+                height={125}
+              >
+                DocNexus.
+              </LinkPreview>{" "}
+            </h4>
+            <p className="text-lg text-gray-700 dark:text-gray-300 my-[10px]">
               A passionate Full Stack Software Engineer with 4+ years of
               experience in building scalable applications and creating
               exceptional user experiences.
