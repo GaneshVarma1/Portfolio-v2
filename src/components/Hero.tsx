@@ -78,7 +78,7 @@ export function Hero() {
                 url="https://docnexus.ai"
                 className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
                 isStatic={true}
-                imageSrc="src/assets/projectsgif/Doc.gif"
+                imageSrc="public/Doc.gif"
                 width={200}
                 height={125}
               >
@@ -96,7 +96,7 @@ export function Hero() {
                 url="https://reactwind.com"
                 className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
                 isStatic={true}
-                imageSrc="src/assets/projectsgif/reactwind.gif"
+                imageSrc="public/reactwind.gif"
                 width={200}
                 height={125}
               >
