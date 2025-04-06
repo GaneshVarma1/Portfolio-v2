@@ -75,10 +75,10 @@ export function Hero() {
             <h4 className="text-xl text-gray-700 dark:text-gray-300 flex items-center flex-wrap gap-x-2 gap-y-1">
               Senior Software Engineer at{" "}
               <LinkPreview
-                url="https://reactwind.com"
+                url="https://docnexus.ai"
                 className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
                 isStatic={true}
-                imageSrc="https://i.postimg.cc/nCMcx58c/Screenshot-2025-01-15-at-6-16-37-PM.png"
+                imageSrc="src/assets/projectsgif/Doc.gif"
                 width={200}
                 height={125}
               >
@@ -96,7 +96,7 @@ export function Hero() {
                 url="https://reactwind.com"
                 className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
                 isStatic={true}
-                imageSrc="https://i.postimg.cc/nCMcx58c/Screenshot-2025-01-15-at-6-16-37-PM.png"
+                imageSrc="src/assets/projectsgif/reactwind.gif"
                 width={200}
                 height={125}
               >
