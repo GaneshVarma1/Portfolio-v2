@@ -8,6 +8,20 @@ const experiences = [
     category: "work",
     items: [
       {
+        title: "Senior Full Stack Engineer",
+        company: "DocNexus",
+        companyUrl: "https://www.docnexus.ai",
+        duration: "2025 Feb - Present",
+        description: [
+          "Leading full-stack development using React, Next.js, Node.js, Django, and PostgreSQL",
+          "Building a ChatGPT-like AI assistant for doctors using domain-specific LLMs and prompt engineering",
+          "Managing the engineering team, defining sprints, and aligning tech initiatives with product goals",
+          "Implementing security best practices, CI/CD pipelines, and ensuring HIPAA-compliant data handling",
+          "Researching and integrating emerging AI/ML frameworks to enhance performance and user experience",
+        ],
+        technologies: ["React", "Next.js", "Node.js", "Django", "PostgreSQL", "AWS", "LangChain", "LLMs", "Docker"],
+      },
+      {
         title: "Senior Web Developer",
         company: "MME Worldwide",
         companyUrl: "https://www.mmecreativepartners.com",

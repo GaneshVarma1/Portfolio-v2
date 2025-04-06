@@ -577,6 +577,11 @@ const Gravity = forwardRef<GravityRef, GravityProps>(
           className={cn(className, "relative w-full h-full")}
           {...props}
         >
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <p className="text-gray-500/50 dark:text-white/50 text-7xl font-bold">
+              Move & Play with Emojis!
+            </p>
+          </div>
           {children}
         </div>
       </GravityContext.Provider>

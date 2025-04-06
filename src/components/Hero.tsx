@@ -1,11 +1,10 @@
-import { Github, Linkedin, Mail, Instagram } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { FloatingEmoji } from "./FloatingEmoji";
 import { SocialLink } from "./SocialLink";
 import HeroImage from "../assets/Images/Hero.png";
 import { WavingHand } from "./WavingHand";
 import AvatarCircles from "@/components/ui/avatar-circles";
-import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
 import { LinkPreview } from "@/components/ui/link-preview";
