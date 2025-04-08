@@ -6,6 +6,7 @@ import HeroImage from "../assets/Images/Hero.png";
 import { WavingHand } from "./WavingHand";
 import AvatarCircles from "@/components/ui/avatar-circles";
 import { cn } from "@/lib/utils";
+
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
 import { LinkPreview } from "@/components/ui/link-preview";
 
@@ -51,7 +52,7 @@ const emojis = [
 
 export function Hero() {
   return (
-    <section className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <section className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-900">
       <div className="relative max-w-7xl mx-auto px-4 pt-20 md:pt-0">
         <motion.div
           initial={{ opacity: 0 }}
@@ -78,7 +79,7 @@ export function Hero() {
                 url="https://docnexus.ai"
                 className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
                 isStatic={true}
-                imageSrc="public/Doc.gif"
+                imageSrc="Doc.gif"
                 width={200}
                 height={125}
               >
@@ -96,7 +97,7 @@ export function Hero() {
                 url="https://reactwind.com"
                 className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
                 isStatic={true}
-                imageSrc="public/reactwind.gif"
+                imageSrc="reactwind.gif"
                 width={200}
                 height={125}
               >
@@ -151,12 +152,12 @@ export function Hero() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://drive.google.com/file/d/1BrPG03icph8hL7WE-asnDGgtZfIa90cU/view?usp=drive_link" // Replace with the external link
+              href="https://www.linkedin.com/in/sriganeshshiramshetty/" // Replace with the external link
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:shadow-blue-500/25 transition-all duration-200 inline-block align-middle"
             >
-              Download Resume
+              Connect with me
             </motion.a>
           </motion.div>
 
