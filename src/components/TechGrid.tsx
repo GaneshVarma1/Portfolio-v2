@@ -27,7 +27,6 @@ const technologies: TechnologyCategory[] = [
       { name: "React", iconSlug: "react" },
       { name: "Next.js", iconSlug: "nextdotjs" },
       { name: "Vue.js", iconSlug: "vuedotjs" },
-      { name: "Angular", iconSlug: "angular" },
       { name: "jQuery", iconSlug: "jquery" },
       { name: "Bootstrap", iconSlug: "bootstrap" },
       { name: "Tailwind CSS", iconSlug: "tailwindcss" },
