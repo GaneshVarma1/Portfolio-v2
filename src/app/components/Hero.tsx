@@ -191,7 +191,7 @@ export function Hero() {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-[15px] blur-sm" />
                 <Image
-                  src="/hero.jpg"
+                  src="https://i.ibb.co/TqLq4V1r/IMG-0950.jpg"
                   alt="Sri Ganesh Shiramshetty"
                   className="relative w-80 h-96 object-cover rounded-[15px] border-2 border-blue-400/20 shadow-2xl"
                   width={320}
