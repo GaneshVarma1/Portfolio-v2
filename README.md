@@ -1,6 +1,6 @@
-# Vite + React Portfolio
+# Next.js Portfolio
 
-A personal portfolio website built with Vite and React. Showcase your projects, skills, and experience in a fast and modern web application.
+A modern personal portfolio website built with Next.js 14. Showcase your projects, skills, and experience in a fast, SEO-friendly, and modern web application.
 
 ## Table of Contents
 - [Features](#features)
@@ -15,11 +15,15 @@ A personal portfolio website built with Vite and React. Showcase your projects, 
 ---
 
 ## Features
+- Server-side rendering for better SEO
 - Fast and responsive design
-- Clean and modern UI
+- Clean and modern UI with Framer Motion animations
 - Dynamic project sections
 - Contact form integration
-- SEO optimization
+- Dark/Light mode support
+- Optimized images and assets
+- TypeScript support
+- App Router architecture
 
 ## Demo
 [Live Demo](https://bit.ly/sriport)
@@ -29,7 +33,7 @@ A personal portfolio website built with Vite and React. Showcase your projects, 
 Follow these instructions to set up and run the project locally.
 
 ### Prerequisites
-- Node.js (>=14.x)
+- Node.js (>=18.x)
 - npm or yarn
 
 ## Installation
@@ -64,7 +68,7 @@ Or with Yarn:
 ```bash
 yarn dev
 ```
-Open your browser and navigate to `http://localhost:5173` to view your portfolio.
+Open your browser and navigate to `http://localhost:3000` to view your portfolio.
 
 ### Build
 To create an optimized production build:
@@ -75,42 +79,38 @@ Or with Yarn:
 ```bash
 yarn build
 ```
-The build files will be in the `dist/` directory.
 
-### Preview Production Build
-To preview the production build locally:
+### Start Production Server
+To start the production server:
 ```bash
-npm run preview
+npm run start
 ```
 Or with Yarn:
 ```bash
-yarn preview
+yarn start
 ```
 
 ## Deployment
 
-You can deploy the `dist` directory to any static hosting provider such as:
-- [Vercel](https://vercel.com)
+This project is optimized for deployment on Vercel:
+
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Vercel will automatically detect Next.js and deploy your site
+
+You can also deploy to other platforms that support Next.js:
 - [Netlify](https://netlify.com)
-- [GitHub Pages](https://pages.github.com)
-
-For Vercel:
-1. Install the Vercel CLI:
-   ```bash
-   npm install -g vercel
-   ```
-2. Deploy:
-   ```bash
-   vercel
-   ```
-
-For Netlify, simply drag and drop the `dist` folder into the deployment interface.
+- [Railway](https://railway.app)
+- [AWS Amplify](https://aws.amazon.com/amplify/)
 
 ## Technologies Used
-- **React**: Frontend framework
-- **Vite**: Build tool for fast development
-- **Tailwind CSS** (optional): Styling framework
-- **EmailJS** (optional): Contact form integration
+- **Next.js 14**: React framework with server-side rendering
+- **TypeScript**: Type-safe JavaScript
+- **Tailwind CSS**: Utility-first CSS framework
+- **Framer Motion**: Animation library
+- **Radix UI**: Accessible UI components
+- **Lucide Icons**: Beautiful SVG icons
+- **EmailJS**: Contact form integration
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
