@@ -18,7 +18,7 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = ["About", "Experience", "Projects", "Playground"];
+  const navItems = ["About", "Experience", "Projects", "Publications", "Playground"];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);

@@ -3,32 +3,36 @@ export const experiences = [
     category: "work",
     items: [
       {
-        title: "Senior Software Engineer",
+        title: "Senior Full Stack Engineer",
         company: "DocNexus",
         companyUrl: "https://docnexus.ai",
-        duration: "2023 Jan - 2024 Mar",
+        duration: "Feb 2025 – June 2025",
         description: [
-          "Led the development of AI-powered document processing system using React, Node.js, and Python",
-          "Implemented real-time collaboration features using WebSocket and Redis",
-          "Optimized database queries resulting in 60% faster load times",
-          "Mentored junior developers and conducted code reviews",
-          "Implemented CI/CD pipelines using GitHub Actions and Docker",
+          "Architecting and developing an LLM-powered chat application similar to ChatGPT, designed specifically for doctors and medical professionals.",
+          "Leading the project from scratch, handling all aspects of backend, frontend, and infrastructure development.",
+          "Implementing Docker and Redis for efficient deployment and caching to enhance performance and scalability.",
+          "Utilizing AI/ML models to provide intelligent and context-aware medical assistance.",
+          "Integrating ClickHouse DB and Google BigQuery for handling large-scale medical data processing and analytics.",
+          "Designing a subscription-based model, ensuring seamless payment integration for premium medical services.",
+          "Leveraging React.js, Tailwind CSS, Node.js, and Python to build a modern, scalable, and high-performance web application.",
+          "Setting up robust security measures, including authentication, encryption, and compliance with medical data regulations.",
+          "Coordinating with cross-functional teams, including AI researchers and cloud engineers, to optimize model performance and user experience.",
+          "Continuously refining the platform by analyzing user feedback and implementing feature updates to meet industry standards."
         ],
-        technologies: ["React", "Node.js", "Python", "PostgreSQL", "Docker", "Redis", "WebSocket"],
+        technologies: ["React.js", "Next.js", "Tailwind CSS", "Node.js", "Python", "Docker", "Redis", "ClickHouse", "Google BigQuery", "AI/ML", "Authentication", "Encryption", "Medical Data Compliance"],
       },
       {
-        title: "Full Stack Developer",
+        title: "Senior Full Stack Web Developer",
         company: "MMEink",
         companyUrl: "https://mmeink.com",
-        duration: "2022 Mar - 2022 Dec",
+        duration: "Aug 2024 – Jan 2025",
         description: [
-          "Developed and maintained multiple e-commerce platforms using React and Node.js",
-          "Implemented payment gateway integrations (Stripe, PayPal)",
-          "Created custom CMS for content management",
-          "Optimized website performance and SEO",
-          "Collaborated with design team to implement responsive UI/UX",
+          "Overseeing the management and development of 15+ in-house websites and client websites, utilizing React.js, Tailwind CSS, JavaScript, and PHP to deliver customized solutions and enhance user experiences.",
+          "Leading a team of web developers, mentoring junior staff, and guiding them through technical challenges to ensure project success.",
+          "Collaborating with clients to understand requirements, and providing tailored solutions to improve their online presence using HTML, CSS, and JavaScript for lightweight, fast-loading sites.",
+          "Developing reusable, scalable components with React.js and Tailwind CSS, enhancing maintainability and performance across multiple projects."
         ],
-        technologies: ["React", "Node.js", "MongoDB", "Stripe", "PayPal", "AWS"],
+        technologies: ["React.js", "Tailwind CSS", "JavaScript", "PHP", "HTML", "CSS", "Team Leadership", "Client Collaboration", "Scalable Components"],
       },
       {
         title: "Web Developer and Technical SEO",
@@ -58,6 +62,7 @@ export const experiences = [
         ],
         technologies: ["React", "Python", "PostgreSQL", "Docker", "Jenkins"],
       },
+      
     ],
   },
   {

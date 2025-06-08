@@ -138,19 +138,19 @@ export function Hero() {
                   label="Email"
                 />
               </div>
-
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="https://www.linkedin.com/in/sriganeshshiramshetty/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:shadow-blue-500/25 transition-all duration-200 inline-flex items-center justify-center gap-2"
-              >
-                Connect with me
-                <ArrowRight className="w-4 h-4" />
-              </motion.a>
             </div>
+
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href="https://www.linkedin.com/in/sriganeshshiramshetty/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:shadow-blue-500/25 transition-all duration-200 inline-flex items-center justify-center gap-2"
+            >
+              Connect with me
+              <ArrowRight className="w-4 h-4" />
+            </motion.a>
           </motion.div>
 
           {/* Right Side */}
@@ -191,7 +191,7 @@ export function Hero() {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-[15px] blur-sm" />
                 <Image
-                  src="/hero.jpg"
+                  src="https://i.ibb.co/TqLq4V1r/IMG-0950.jpg"
                   alt="Sri Ganesh Shiramshetty"
                   className="relative w-80 h-96 object-cover rounded-[15px] border-2 border-blue-400/20 shadow-2xl"
                   width={320}

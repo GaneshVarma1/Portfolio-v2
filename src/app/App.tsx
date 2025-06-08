@@ -4,6 +4,7 @@ import { Navigation } from "./components/Navigation";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
+import { Publications } from "./components/Publications";
 import { ExperienceSection } from "./components/experience/ExperienceSection";
 import { Footer } from "./components/footer/Footer";
 import { Preview } from "./components/Preview";
@@ -22,6 +23,7 @@ function AppContent() {
       <About />
       <ExperienceSection />
       <Projects />
+      <Publications />
       <Preview />
       <Footer />
       <ScrollToTop />
