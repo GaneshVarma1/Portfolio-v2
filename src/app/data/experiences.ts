@@ -3,6 +3,34 @@ export const experiences = [
     category: "work",
     items: [
       {
+        title: "Senior Software Engineer",
+        company: "DocNexus",
+        companyUrl: "https://docnexus.ai",
+        duration: "2023 Jan - 2024 Mar",
+        description: [
+          "Led the development of AI-powered document processing system using React, Node.js, and Python",
+          "Implemented real-time collaboration features using WebSocket and Redis",
+          "Optimized database queries resulting in 60% faster load times",
+          "Mentored junior developers and conducted code reviews",
+          "Implemented CI/CD pipelines using GitHub Actions and Docker",
+        ],
+        technologies: ["React", "Node.js", "Python", "PostgreSQL", "Docker", "Redis", "WebSocket"],
+      },
+      {
+        title: "Full Stack Developer",
+        company: "MMEink",
+        companyUrl: "https://mmeink.com",
+        duration: "2022 Mar - 2022 Dec",
+        description: [
+          "Developed and maintained multiple e-commerce platforms using React and Node.js",
+          "Implemented payment gateway integrations (Stripe, PayPal)",
+          "Created custom CMS for content management",
+          "Optimized website performance and SEO",
+          "Collaborated with design team to implement responsive UI/UX",
+        ],
+        technologies: ["React", "Node.js", "MongoDB", "Stripe", "PayPal", "AWS"],
+      },
+      {
         title: "Web Developer and Technical SEO",
         company: "6 Degrees Media",
         companyUrl: "https://www.6degreesmedia.com",
