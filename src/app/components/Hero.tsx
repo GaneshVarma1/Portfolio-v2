@@ -141,12 +141,11 @@ export function Hero() {
             </div>
 
             <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.02 }}
               href="https://www.linkedin.com/in/sriganeshshiramshetty/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:shadow-blue-500/25 transition-all duration-200 inline-flex items-center justify-center gap-2"
+              className="bg-blue-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-600 transition-colors inline-flex items-center gap-2"
             >
               Connect with me
               <ArrowRight className="w-4 h-4" />
