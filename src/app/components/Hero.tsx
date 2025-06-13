@@ -102,6 +102,33 @@ export function Hero() {
                 </span>
               </h5>
 
+              <h5 className="text-xl text-gray-700 dark:text-gray-300 flex items-center flex-wrap gap-x-2 gap-y-1">
+                Building{" "}
+                <LinkPreview
+                  url="https://goodmoney.xyz"
+                  className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
+                  isStatic={true}
+                  imageSrc="/goodmoneyhero.gif"
+                  width={200}
+                  height={125}
+                >
+                  Goodmoney
+                </LinkPreview>{" "}
+                <span className="flex items-center gap-2">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+                    alt="TypeScript Logo"
+                    className="w-auto h-5"
+                  />
+                  <span>+</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png"
+                    alt="Next.js Logo"
+                    className="w-auto h-5 dark:invert"
+                  />
+                </span>
+              </h5>
+
               <div className="flex items-center space-x-2">
                 <span className="text-xl font-bold text-gray-700 dark:text-gray-300">
                   Used by
