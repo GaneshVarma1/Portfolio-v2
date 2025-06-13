@@ -21,6 +21,27 @@ const projects = [
     image: "reactwind.gif",
   },
   {
+    title: "Goodmoney AI",
+    description:
+      "Why pay money to save money or Budjet money, Goodmoney AI is a tool that helps you save money by giving you personalized advice on how to save money.",
+    tech: [
+      "React",
+      "TailwindCSS",
+      "TypeScript",
+      "NextJS",
+      "Vercel",
+      "Together AI",
+      "Llama -3.3",
+      "Supabase",
+      "Clerk",
+      "Zustand",
+      "Recharts",
+    ],
+    github: "https://github.com/GaneshVarma1/",
+    demo: "https://goodmoney.xyz",
+    image: "goodmoney.gif",
+  },
+  {
     title: "MME Worldwide",
     description:
       "A newly redefined Event Management and Hospitality agency, distinguished for curating exceptional and premium experiences with unparalleled professionalism.",
