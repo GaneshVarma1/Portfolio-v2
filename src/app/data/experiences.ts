@@ -74,13 +74,29 @@ export const experiences = [
         companyUrl: "https://www.newpaltz.edu",
         duration: "2022 Aug - 2024 May",
         description: [
+          "Specialized in Advanced Software Engineering and Full Stack Development",
+          "Maintained a 3.67 GPA",
+          "Completed advanced coursework in Distributed Systems, Cloud Computing, and AI/ML",
+          "Led multiple research projects in Web Development and Software Architecture",
+          "Published research papers on modern web development practices"
+        ],
+        technologies: ["Computer Science", "Software Engineering", "Web Development", "Cloud Computing", "AI/ML"],
+      },
+      {
+        title: "Bachelors in Computer Science and Engineering",
+        company: "MLR Institute of Technology",
+        companyUrl: "https://mlrit.ac.in",
+        duration: "2017 Aug - 2021 May",
+        description: [
           "Specialized in Software Engineering and Web Development",
           "Maintained a 3.8 GPA",
-          "Completed coursework in Advanced Web Development, Database Systems, and Software Engineering",
-          "Participated in various hackathons and coding competitions",
+          "Completed core coursework in Data Structures, Algorithms, and Database Management",
+          "Developed multiple full-stack applications as part of coursework",
+          "Won first place in college-level hackathon for innovative web solution",
+          "Helped professors with their research projects"
         ],
-        technologies: ["Computer Science", "Software Engineering", "Web Development"],
-      },
+        technologies: ["Computer Science", "Software Engineering", "Web Development", "Data Structures", "Algorithms"],
+      }
     ],
   },
 ]; 
