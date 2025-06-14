@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail, Instagram, ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { FloatingEmoji } from "./FloatingEmoji";
 import { SocialLink } from "./SocialLink";
 import { WavingHand } from "./WavingHand";
@@ -7,7 +7,7 @@ import AvatarCircles from "./ui/avatar-circles";
 import { cn } from "../lib/utils";
 import AnimatedShinyText from "./ui/animated-shiny-text";
 import { LinkPreview } from "./ui/link-preview";
-import Image from "next/image";
+import { TiltedCard } from "./ui/tilted-card";
 import { avatars } from "../data/avatars";
 
 const emojis = [
@@ -35,6 +35,40 @@ function JobStatusBadge() {
 }
 
 export function Hero() {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const mouseXSpring = useSpring(x, {
+    stiffness: 150,
+    damping: 15,
+    mass: 0.1
+  });
+  const mouseYSpring = useSpring(y, {
+    stiffness: 150,
+    damping: 15,
+    mass: 0.1
+  });
+
+  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["10deg", "-10deg"]);
+  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-10deg", "10deg"]);
+
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const width = rect.width;
+    const height = rect.height;
+    const mouseX = event.clientX - rect.left;
+    const mouseY = event.clientY - rect.top;
+    const xPct = mouseX / width - 0.5;
+    const yPct = mouseY / height - 0.5;
+    x.set(xPct);
+    y.set(yPct);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
   return (
     <section className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-50 via-gray-50 to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900/20">
       {/* Background decorative elements */}
@@ -209,22 +243,30 @@ export function Hero() {
 
             {/* Hero Image */}
             <div className="relative mt-0">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-[15px] blur-2xl opacity-20 animate-pulse" />
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
+              <TiltedCard
+                imageSrc="/IMG_2576.png"
+                altText="Sri Ganesh Shiramshetty"
+                containerHeight="384px"
+                containerWidth="320px"
+                imageHeight="100%"
+                imageWidth="100%"
+                rotateAmplitude={12}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={false}
                 className="relative"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-[15px] blur-sm" />
-                <Image
-                  src="https://i.ibb.co/TqLq4V1r/IMG-0950.jpg"
-                  alt="Sri Ganesh Shiramshetty"
-                  className="relative w-80 h-96 object-cover rounded-[15px] border-2 border-blue-400/20 shadow-2xl"
-                  width={320}
-                  height={384}
-                  priority
-                />
-              </motion.div>
+                displayOverlayContent={true}
+                overlayContent={
+                  <div className="absolute inset-0 flex flex-col justify-end p-4 bg-gradient-to-t from-transparent to-transparent rounded-b-[15px]">
+                    <p className="text-lg font-semibold text-black [text-shadow:_0_2px_4px_rgb(255_255_255_/_60%)]">
+                      Sri
+                    </p>
+                    <p className="text-sm text-black [text-shadow:_0_2px_4px_rgb(255_255_255_/_60%)]">
+                      SWE ❤️ Deserts
+                    </p>
+                  </div>
+                }
+              />
 
               {/* Floating Emojis */}
               {emojis.map((emojiProps, index) => (
