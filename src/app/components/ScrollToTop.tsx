@@ -33,7 +33,7 @@ export function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-[9999] group"
+          className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-[9998] group"
           aria-label="Scroll to top"
         >
           <div className="relative flex items-center justify-center">
