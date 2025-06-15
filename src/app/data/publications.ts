@@ -10,6 +10,15 @@ export interface Publication {
 
 export const publications: Publication[] = [
   {
+    title: "Integrating AI, ML, Blockchain, and IoT for End-to-End Supply Chain Optimization",
+    venue: 'Book Chapter in "Strategic Innovations for Dynamic Supply Chains"',
+    authors: "G. Sowmya, R. Sridevi, K. S. Sadasiva Rao, Sri Ganesh Shiramshetty",
+    publisher: "IGI Global",
+    year: 2024,
+    doi: "10.4018/979-8-3693-3575-8.ch006",
+    url: "https://www.igi-global.com/chapter/integrating-ai-ml-blockchain-and-iot-for-end-to-end-supply-chain-optimization/344329",
+  },
+  {
     title: "Transforming Finance: Exploring the Role of Blockchain and Smart Contracts",
     venue: 'Book Chapter in "Fintech Applications in Islamic Finance: AI, Machine Learning, and Blockchain Techniques"',
     authors: "G. Sowmya, R. Sridevi, Sri Ganesh Shiramshetty",
