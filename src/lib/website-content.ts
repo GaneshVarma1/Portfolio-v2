@@ -21,6 +21,9 @@ export function getWebsiteContent() {
     - Instagram: https://www.instagram.com/varmaaa.x_/
     - Portfolio: srishiram.xyz
 
+    Personal Life:
+    Sri is happily married to Nandini Morla. They share a beautiful life together, supporting each other's dreams and aspirations.
+
     Personal Interests:
     When it comes to food, Sri is quite the foodie! He has a special place in his heart for Indian cuisine - 
     there's nothing that makes him happier than a steaming plate of biryani, some creamy butter chicken, 
