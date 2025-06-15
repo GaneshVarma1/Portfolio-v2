@@ -9,6 +9,7 @@ import AnimatedShinyText from "./ui/animated-shiny-text";
 import { LinkPreview } from "./ui/link-preview";
 import { TiltedCard } from "./ui/tilted-card";
 import { avatars } from "../data/avatars";
+import { MediaButton } from "@/components/ui/media-button";
 
 const emojis = [
   { emoji: "💻", delay: 0, duration: 4, position: { x: 75, y: 20 } },
@@ -201,16 +202,17 @@ export function Hero() {
               </div>
             </div>
 
-            <motion.a
-              whileHover={{ scale: 1.02 }}
+            <a
               href="https://www.linkedin.com/in/sriganeshshiramshetty/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-600 transition-colors inline-flex items-center gap-2"
+              className="inline-block mt-4 sm:mt-0"
             >
-              Connect with me
-              <ArrowRight className="w-4 h-4" />
-            </motion.a>
+              <MediaButton
+                label="Connect with me ✨"
+                mediaUrl="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3JmdmZzdW9zYnFzeHY0MTZ3MTJkaHhnMzVlYmExNGNhZDkxdXBtaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ov9k5ZJf86f1FPh0A/giphy.gif"
+              />
+            </a>
           </motion.div>
 
           {/* Right Side */}
@@ -262,7 +264,7 @@ export function Hero() {
                       Sri
                     </p>
                     <p className="text-sm text-black [text-shadow:_0_2px_4px_rgb(255_255_255_/_60%)]">
-                      SWE ❤️ Deserts
+                      SWE ❤️ Desserts
                     </p>
                   </div>
                 }
