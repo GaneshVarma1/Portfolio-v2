@@ -11,6 +11,7 @@ import { Preview } from "./components/Preview";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { ThemeProvider, useTheme } from "./components/ThemeProvider";
 import { AnimatedCursorComponent } from "./components/AnimatedCursorComponent";
+import { ExpandableChatDemo } from "./components/ui/chat-demo";
 
 function AppContent() {
   useTheme();
@@ -27,6 +28,7 @@ function AppContent() {
       <Preview />
       <Footer />
       <ScrollToTop />
+      <ExpandableChatDemo />
     </div>
   );
 }
