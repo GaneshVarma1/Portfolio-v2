@@ -4,6 +4,7 @@ import { Navigation } from "./components/Navigation";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";
+import { Recommendations } from "./components/Recommendations";
 import { Publications } from "./components/Publications";
 import { ExperienceSection } from "./components/experience/ExperienceSection";
 import { Footer } from "./components/footer/Footer";
@@ -25,6 +26,7 @@ function AppContent() {
         <About />
         <ExperienceSection />
         <Projects />
+        <Recommendations />
         <Publications />
         <Preview />
       </main>
