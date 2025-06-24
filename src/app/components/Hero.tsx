@@ -151,7 +151,7 @@ export function Hero() {
                       url="https://promptly.diy"
                       className="font-bold text-blue-500 hover:text-blue-600  transition-colors"
                       isStatic={true}
-                      imageSrc="/promptly.gif"
+                      imageSrc="/Promptly.gif"
                       width={200}
                       height={125}
                     >
