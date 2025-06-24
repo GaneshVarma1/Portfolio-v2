@@ -1,3 +1,4 @@
+
 import { XCard } from "./x-gradient-card"
 
 const XCardDummyData = {

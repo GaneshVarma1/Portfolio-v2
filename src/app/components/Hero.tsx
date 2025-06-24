@@ -110,59 +110,70 @@ export function Hero() {
             </p>
 
             <div className="space-y-6">
-              <h5 className="text-xl text-gray-700 dark:text-gray-300 flex items-center flex-wrap gap-x-2 gap-y-1">
-                Building{" "}
-                <LinkPreview
-                  url="https://reactwind.com"
-                  className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
-                  isStatic={true}
-                  imageSrc="/reactwind.gif"
-                  width={200}
-                  height={125}
-                >
-                  ReactWind
-                </LinkPreview>{" "}
-                <span className="flex items-center gap-2">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
-                    alt="React Logo"
-                    className="w-auto h-5"
-                  />
-                  <span>+</span>
-                  <img
-                    src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg"
-                    alt="Tailwind Logo"
-                    className="w-auto h-5"
-                  />
-                </span>
-              </h5>
+              {/* Current Projects Section */}
+              <div className="space-y-4">
+                
+                <div className="space-y-3">
 
-              <h5 className="text-xl text-gray-700 dark:text-gray-300 flex items-center flex-wrap gap-x-2 gap-y-1">
-                Building{" "}
-                <LinkPreview
-                  url="https://goodmoney.xyz"
-                  className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
-                  isStatic={true}
-                  imageSrc="/goodmoneyhero.gif"
-                  width={200}
-                  height={125}
-                >
-                  Goodmoney
-                </LinkPreview>{" "}
-                <span className="flex items-center gap-2">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
-                    alt="TypeScript Logo"
-                    className="w-auto h-5"
-                  />
-                  <span>+</span>
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png"
-                    alt="Next.js Logo"
-                    className="w-auto h-5 dark:invert"
-                  />
-                </span>
-              </h5>
+
+                  {/* Goodmoney */}
+                  <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-lg text-gray-700 dark:text-gray-300">
+                    <span>Building</span>
+                    <LinkPreview
+                      url="https://goodmoney.xyz"
+                      className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
+                      isStatic={true}
+                      imageSrc="/goodmoneyhero.gif"
+                      width={200}
+                      height={125}
+                    >
+                      Goodmoney
+                    </LinkPreview>
+                    <span className="flex items-center gap-2">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+                        alt="TypeScript Logo"
+                        className="w-auto h-4"
+                      />
+                      <span>+</span>
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png"
+                        alt="Next.js Logo"
+                        className="w-auto h-4 dark:invert"
+                      />
+                    </span>
+                  </div>
+
+                  {/* Promptly */}
+                  <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-lg text-gray-700 dark:text-gray-300">
+                    <span>Building</span>
+                    <LinkPreview
+                      url="https://promptly.diy"
+                      className="font-bold text-blue-500 hover:text-blue-600  transition-colors"
+                      isStatic={true}
+                      imageSrc="/promptly.gif"
+                      width={200}
+                      height={125}
+                    >
+                      Promptly
+                    </LinkPreview>
+                    <span className="text-sm text-gray-600 dark:text-gray-400">with 10+ AI Models</span>
+                    <span className="flex items-center gap-2">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png"
+                        alt="Next.js Logo"
+                        className="w-auto h-4 dark:invert"
+                      />
+                      <span>+</span>
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg"
+                        alt="OpenAI Logo"
+                        className="w-auto h-4 dark:invert"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
 
               <div className="flex items-center space-x-2">
                 <span className="text-xl font-bold text-gray-700 dark:text-gray-300">
@@ -222,26 +233,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="w-full md:w-1/2 flex flex-col items-center relative"
           >
-            {/* Magic UI Section */}
-            <div className="z-10 flex items-center justify-center mb-6">
-              <div
-                className={cn(
-                  "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
-                )}
-              >
-                <a
-                  href="https://reactwind.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block"
-                >
-                  <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                    <span>✨ Checkout ReactWind</span>
-                    <ArrowRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-                  </AnimatedShinyText>
-                </a>
-              </div>
-            </div>
+
 
             {/* Hero Image */}
             <div className="relative mt-0">
