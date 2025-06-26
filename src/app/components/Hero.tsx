@@ -148,7 +148,7 @@ export function Hero() {
                   <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-lg text-gray-700 dark:text-gray-300">
                     <span>Building</span>
                     <LinkPreview
-                      url="https://promptly.diy"
+                      url="https://beta.promptly.diy"
                       className="font-bold text-blue-500 hover:text-blue-600  transition-colors"
                       isStatic={true}
                       imageSrc="/Promptly.gif"
