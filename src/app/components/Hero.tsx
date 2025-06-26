@@ -116,34 +116,7 @@ export function Hero() {
                 <div className="space-y-3">
 
 
-                  {/* Goodmoney */}
-                  <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-lg text-gray-700 dark:text-gray-300">
-                    <span>Building</span>
-                    <LinkPreview
-                      url="https://goodmoney.xyz"
-                      className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
-                      isStatic={true}
-                      imageSrc="/goodmoneyhero.gif"
-                      width={200}
-                      height={125}
-                    >
-                      Goodmoney
-                    </LinkPreview>
-                    <span className="flex items-center gap-2">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
-                        alt="TypeScript Logo"
-                        className="w-auto h-4"
-                      />
-                      <span>+</span>
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png"
-                        alt="Next.js Logo"
-                        className="w-auto h-4 dark:invert"
-                      />
-                    </span>
-                  </div>
-
+                 
                   {/* Promptly */}
                   <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-lg text-gray-700 dark:text-gray-300">
                     <span>Building</span>
@@ -174,6 +147,35 @@ export function Hero() {
                   </div>
                 </div>
               </div>
+
+               {/* Goodmoney */}
+               <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-lg text-gray-700 dark:text-gray-300">
+                    <span>Building</span>
+                    <LinkPreview
+                      url="https://goodmoney.xyz"
+                      className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
+                      isStatic={true}
+                      imageSrc="/goodmoneyhero.gif"
+                      width={200}
+                      height={125}
+                    >
+                      Goodmoney
+                    </LinkPreview>
+                    <span className="flex items-center gap-2">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+                        alt="TypeScript Logo"
+                        className="w-auto h-4"
+                      />
+                      <span>+</span>
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png"
+                        alt="Next.js Logo"
+                        className="w-auto h-4 dark:invert"
+                      />
+                    </span>
+                  </div>
+
 
               <div className="flex items-center space-x-2">
                 <span className="text-xl font-bold text-gray-700 dark:text-gray-300">
