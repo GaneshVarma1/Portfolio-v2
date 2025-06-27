@@ -57,7 +57,7 @@ export function Navigation() {
             whileTap={{ scale: 0.9 }}
             className="text-3xl"
           >
-            <img src="ganesh.png" alt="Ganesh Icon" className="w-8 h-8" />
+            <img src="ganesh.png" alt="Sri Ganesh Shiramshetty - Portfolio Logo" className="w-8 h-8" />
           </motion.a>
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
