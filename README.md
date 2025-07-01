@@ -1,125 +1,102 @@
-# Next.js Portfolio
+# 👋 Hey there! I'm Sri Ganesh Shiramshetty
 
-A modern personal portfolio website built with Next.js 14. Showcase your projects, skills, and experience in a fast, SEO-friendly, and modern web application.
+<div align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3JmdmZzdW9zYnFzeHY0MTZ3MTJkaHhnMzVlYmExNGNhZDkxdXBtaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ov9k5ZJf86f1FPh0A/giphy.gif" alt="Hello" width="200"/>
+</div>
 
-## Table of Contents
-- [Features](#features)
-- [Demo](#demo)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Deployment](#deployment)
-- [Technologies Used](#technologies-used)
-- [License](#license)
+## 🚀 Full Stack Software Engineer | Creative Developer | Tech Enthusiast
+
+> *"Turning coffee into code, one commit at a time ☕"*
 
 ---
 
-## Features
-- Server-side rendering for better SEO
-- Fast and responsive design
-- Clean and modern UI with Framer Motion animations
-- Dynamic project sections
-- Contact form integration
-- Dark/Light mode support
-- Optimized images and assets
-- TypeScript support
-- App Router architecture
+## 🌟 What I'm Up To
 
-## Demo
-[Live Demo](https://bit.ly/sriport)
-
-## Getting Started
-
-Follow these instructions to set up and run the project locally.
-
-### Prerequisites
-- Node.js (>=18.x)
-- npm or yarn
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/GaneshVarma1/Portfolio-v2.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd Portfolio-v2
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-   Or with Yarn:
-   ```bash
-   yarn
-   ```
-
-## Usage
-
-### Development
-Run the development server:
-```bash
-npm run dev
-```
-Or with Yarn:
-```bash
-yarn dev
-```
-Open your browser and navigate to `http://localhost:3000` to view your portfolio.
-
-### Build
-To create an optimized production build:
-```bash
-npm run build
-```
-Or with Yarn:
-```bash
-yarn build
-```
-
-### Start Production Server
-To start the production server:
-```bash
-npm run start
-```
-Or with Yarn:
-```bash
-yarn start
-```
-
-## Deployment
-
-This project is optimized for deployment on Vercel:
-
-1. Push your code to GitHub
-2. Import your repository on [Vercel](https://vercel.com)
-3. Vercel will automatically detect Next.js and deploy your site
-
-You can also deploy to other platforms that support Next.js:
-- [Netlify](https://netlify.com)
-- [Railway](https://railway.app)
-- [AWS Amplify](https://aws.amazon.com/amplify/)
-
-## Technologies Used
-- **Next.js 14**: React framework with server-side rendering
-- **TypeScript**: Type-safe JavaScript
-- **Tailwind CSS**: Utility-first CSS framework
-- **Framer Motion**: Animation library
-- **Radix UI**: Accessible UI components
-- **Lucide Icons**: Beautiful SVG icons
-- **EmailJS**: Contact form integration
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+- 🔍 **Actively looking for new opportunities** - Let's build something amazing together!
+- 💻 Crafting beautiful, scalable web applications
+- 🎨 Creating stunning user experiences with modern tech
+- 📚 Always learning, always growing
+- 🍕 Foodie who loves exploring new restaurants (especially Indian cuisine!)
+- 🏖️ Beach lover - there's something magical about ocean breezes
 
 ---
 
-### Author
-Developed by [Ganesh Varma](https://www.linkedin.com/in/sriganeshshiramshetty/).
+## 🎯 Let's Connect!
+
+<div align="center">
+  
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20me-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sriganeshshiramshetty/)
+  [![GitHub](https://img.shields.io/badge/GitHub-Follow%20my%20work-black?style=for-the-badge&logo=github)](https://github.com/GaneshVarma1)
+  [![YouTube](https://img.shields.io/badge/YouTube-Watch%20my%20content-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@ganeshvarma)
+  [![Instagram](https://img.shields.io/badge/Instagram-Follow%20my%20journey-purple?style=for-the-badge&logo=instagram)](https://www.instagram.com/varmaaa.x_/)
+  [![Email](https://img.shields.io/badge/Email-Let's%20chat!-green?style=for-the-badge&logo=gmail)](mailto:sriganeshshiram@gmail.com)
+  
+</div>
 
 ---
 
-Feel free to contribute to this project by opening issues or pull requests. Your feedback is appreciated!
+## 🎪 Quick Links
+
+<div align="center">
+
+| Platform | Link | What You'll Find |
+|----------|------|------------------|
+| 🌐 **Portfolio** | [srishiram.xyz](https://srishiram.xyz) | My work, projects & story |
+| 📄 **Resume** | [Download PDF](https://drive.google.com/file/d/1BrPG03icph8hL7WE-asnDGgtZfIa90cU/view?usp=drive_link) | Professional experience |
+| 💼 **LinkedIn** | [Connect Here](https://www.linkedin.com/in/sriganeshshiramshetty/) | Professional network |
+| 🐙 **GitHub** | [Check My Code](https://github.com/GaneshVarma1) | Open source & projects |
+| 📺 **YouTube** | [Watch & Learn](https://www.youtube.com/@ganeshvarma) | Tech tutorials & insights |
+| 📸 **Instagram** | [Daily Life](https://www.instagram.com/varmaaa.x_/) | Behind the scenes |
+
+</div>
+
+---
+
+## 🎨 What I Love Building
+
+- **Web Applications** that users actually enjoy using
+- **AI-Powered Tools** that make life easier
+- **Beautiful UIs** that tell stories
+- **Scalable Systems** that grow with your business
+- **Creative Solutions** to complex problems
+
+---
+
+## 🍕 Fun Facts About Me
+
+- **Food Philosophy**: Life is too short for bad food! 🍜
+- **Coding Style**: Clean, readable, and well-documented (just like my restaurant reviews 😄)
+- **Work Ethic**: I don't just write code, I craft experiences
+- **Communication**: I speak fluent JavaScript, TypeScript, and human! 🗣️
+- **Location**: Currently in Dallas, TX but always open to new adventures
+
+---
+
+## 🤝 Let's Work Together!
+
+Whether you want to:
+- 💼 **Hire me** for your next project
+- 🤝 **Collaborate** on something exciting
+- ☕ **Grab coffee** and chat about tech
+- 🍕 **Try a new restaurant** (I'm always game!)
+- 💡 **Brainstorm** ideas
+
+**I'm all ears!** Let's make something amazing happen.
+
+---
+
+<div align="center">
+  
+  ### 📬 Get In Touch
+  
+  **Email**: [sriganeshshiram@gmail.com](mailto:sriganeshshiram@gmail.com)  
+  **Phone**: [+1 (845) 633-9611](tel:+18456339611)  
+  **Location**: Dallas, TX, USA 🌟
+  
+  ---
+  
+  *"The best code is the code that makes someone's life better"* ✨
+  
+  [![Portfolio](https://img.shields.io/badge/View%20My%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://srishiram.xyz)
+  
+</div>
