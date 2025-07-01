@@ -178,6 +178,16 @@ export function Hero() {
 
 
               <div className="flex items-center space-x-2">
+                <LinkPreview
+                  url="#"
+                  className="text-xl font-bold text-blue-500"
+                  isStatic={true}
+                  imageSrc="/reactwind.gif"
+                  width={200}
+                  height={125}
+                >
+                  ReactWind
+                </LinkPreview>
                 <span className="text-xl font-bold text-foreground">
                   Used by
                 </span>
