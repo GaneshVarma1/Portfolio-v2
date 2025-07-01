@@ -60,20 +60,20 @@ export function TechGrid() {
                 <motion.div
                   key={techIndex}
                   whileHover={{ scale: 1.05 }}
-                  className="flex flex-col items-center p-4 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700"
+                  className="flex flex-col items-center p-4 bg-card rounded-lg border border-border"
                 >
                   {iconPath && (
                     <svg
                       role="img"
                       viewBox="0 0 24 24"
-                      className="w-8 h-8 mb-2 text-gray-700 dark:text-gray-300"
+                      className="w-8 h-8 mb-2 text-muted-foreground"
                       fill="currentColor"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path d={iconPath} />
                     </svg>
                   )}
-                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                  <span className="text-sm text-muted-foreground">
                     {tech.name}
                   </span>
                 </motion.div>

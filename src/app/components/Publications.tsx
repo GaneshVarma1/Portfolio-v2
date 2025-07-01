@@ -4,7 +4,7 @@ import { publications } from "../data/publications";
 
 export function Publications() {
   return (
-    <section id="publications" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="publications" className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -22,26 +22,26 @@ export function Publications() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-card rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                <h3 className="text-xl font-semibold mb-2 text-card-foreground">
                   {pub.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <p className="text-muted-foreground mb-4">
                   {pub.venue}
                 </p>
                 <div className="space-y-2 mb-4">
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p className="text-sm text-muted-foreground/70">
                     <span className="font-medium">Authors:</span> {pub.authors}
                   </p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p className="text-sm text-muted-foreground/70">
                     <span className="font-medium">Publisher:</span> {pub.publisher}
                   </p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p className="text-sm text-muted-foreground/70">
                     <span className="font-medium">Year:</span> {pub.year}
                   </p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p className="text-sm text-muted-foreground/70">
                     <span className="font-medium">DOI:</span> {pub.doi}
                   </p>
                 </div>

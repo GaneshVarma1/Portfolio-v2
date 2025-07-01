@@ -19,7 +19,7 @@ export function Recommendations() {
 
   return (
     <>
-      <section id="recommendations" className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section id="recommendations" className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,7 @@ export function Recommendations() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer group"
+                className="bg-card rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer group"
                 onClick={() => handleCardClick(recommendation)}
               >
                 <div className="p-6">
@@ -55,7 +55,7 @@ export function Recommendations() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
-                        <h3 className="font-semibold text-gray-900 dark:text-white truncate">
+                        <h3 className="font-semibold text-card-foreground truncate">
                           {recommendation.authorName}
                         </h3>
                         {recommendation.isVerified && (
@@ -66,10 +66,10 @@ export function Recommendations() {
                           </div>
                         )}
                       </div>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                      <p className="text-sm text-muted-foreground">
                         @{recommendation.authorHandle}
                       </p>
-                      <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">
+                      <p className="text-xs text-muted-foreground/70 mt-1">
                         {recommendation.timestamp}
                       </p>
                     </div>
@@ -79,25 +79,25 @@ export function Recommendations() {
                   {/* Content Preview */}
                   <div className="space-y-2">
                     {recommendation.content.map((line, idx) => (
-                      <p key={idx} className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                      <p key={idx} className="text-muted-foreground text-sm leading-relaxed">
                         {line}
                       </p>
                     ))}
                   </div>
 
                   {/* Read More Indicator */}
-                  <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <div className="mt-4 pt-4 border-t border-border">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs text-gray-500 dark:text-gray-400">
+                      <span className="text-xs text-muted-foreground/70">
                         Click to read full recommendation
                       </span>
-                      <ExternalLink className="h-4 w-4 text-gray-400 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors" />
+                      <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors" />
                     </div>
                   </div>
 
                   {/* Reply Preview */}
                   {recommendation.reply && (
-                    <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <div className="mt-4 pt-4 border-t border-border">
                       <div className="flex gap-3">
                         <div className="h-8 w-8 rounded-full overflow-hidden flex-shrink-0">
                           <img
@@ -107,12 +107,12 @@ export function Recommendations() {
                           />
                         </div>
                         <div className="flex-1">
-                          <div className="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-400">
+                          <div className="flex items-center gap-2 text-xs text-muted-foreground">
                             <span className="font-medium">{recommendation.reply.authorName}</span>
                             <span>•</span>
                             <span>{recommendation.reply.timestamp}</span>
                           </div>
-                          <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                          <p className="text-sm text-muted-foreground mt-1">
                             {recommendation.reply.content}
                           </p>
                         </div>
@@ -127,9 +127,9 @@ export function Recommendations() {
       </section>
 
       <Dialog open={!!selectedRecommendation} onOpenChange={() => handleCloseDialog()}>
-        <DialogContent className="bg-white dark:bg-gray-800">
+        <DialogContent className="bg-card">
           <DialogHeader>
-            <DialogTitle className="text-gray-900 dark:text-white">LinkedIn Recommendation</DialogTitle>
+            <DialogTitle className="text-card-foreground">LinkedIn Recommendation</DialogTitle>
             <DialogClose onClose={handleCloseDialog} />
           </DialogHeader>
           
@@ -147,7 +147,7 @@ export function Recommendations() {
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    <h3 className="text-xl font-semibold text-card-foreground">
                       {selectedRecommendation.authorName}
                     </h3>
                     {selectedRecommendation.isVerified && (
@@ -159,26 +159,26 @@ export function Recommendations() {
                     )}
                     <LinkedinIcon className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400 mt-1">
+                  <p className="text-muted-foreground mt-1">
                     @{selectedRecommendation.authorHandle}
                   </p>
-                  <p className="text-sm text-gray-500 dark:text-gray-500 mt-1">
+                  <p className="text-sm text-muted-foreground/70 mt-1">
                     {selectedRecommendation.timestamp}
                   </p>
                 </div>
               </div>
               
               <div className="mb-6">
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                  <p className="text-gray-800 dark:text-gray-200 leading-relaxed whitespace-pre-line">
+                <div className="bg-muted rounded-lg p-4">
+                  <p className="text-card-foreground leading-relaxed whitespace-pre-line">
                     {selectedRecommendation.fullContent}
                   </p>
                 </div>
               </div>
               
               {selectedRecommendation.reply && (
-                <div className="mb-6 pt-4 border-t border-gray-200 dark:border-gray-700">
-                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Your Response</h4>
+                <div className="mb-6 pt-4 border-t border-border">
+                  <h4 className="text-sm font-medium text-muted-foreground mb-3">Your Response</h4>
                   <div className="flex gap-3">
                     <div className="flex-shrink-0">
                       <div className="h-10 w-10 rounded-full overflow-hidden">
@@ -191,35 +191,20 @@ export function Recommendations() {
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="font-medium text-gray-900 dark:text-white text-sm">
+                        <span className="font-medium text-card-foreground text-sm">
                           {selectedRecommendation.reply.authorName}
                         </span>
-                        <span className="text-gray-500 dark:text-gray-400 text-sm">
+                        <span className="text-muted-foreground text-sm">
                           • {selectedRecommendation.reply.timestamp}
                         </span>
                       </div>
-                      <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-3">
-                        <p className="text-gray-700 dark:text-gray-300 text-sm">
-                          {selectedRecommendation.reply.content}
-                        </p>
-                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {selectedRecommendation.reply.content}
+                      </p>
                     </div>
                   </div>
                 </div>
               )}
-              
-              <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-                <a
-                  href={selectedRecommendation.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors font-medium"
-                >
-                  <LinkedinIcon className="h-5 w-5" />
-                  View on LinkedIn
-                  <ExternalLink className="h-4 w-4" />
-                </a>
-              </div>
             </div>
           )}
         </DialogContent>
