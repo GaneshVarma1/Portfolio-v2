@@ -42,7 +42,6 @@
 | Platform | Link | What You'll Find |
 |----------|------|------------------|
 | 🌐 **Portfolio** | [srishiram.xyz](https://srishiram.xyz) | My work, projects & story |
-| 📄 **Resume** | [Download PDF](https://drive.google.com/file/d/1BrPG03icph8hL7WE-asnDGgtZfIa90cU/view?usp=drive_link) | Professional experience |
 | 💼 **LinkedIn** | [Connect Here](https://www.linkedin.com/in/sriganeshshiramshetty/) | Professional network |
 | 🐙 **GitHub** | [Check My Code](https://github.com/GaneshVarma1) | Open source & projects |
 | 📺 **YouTube** | [Watch & Learn](https://www.youtube.com/@ganeshvarma) | Tech tutorials & insights |
@@ -91,7 +90,6 @@ Whether you want to:
   
   **Email**: [sriganeshshiram@gmail.com](mailto:sriganeshshiram@gmail.com)  
   **Phone**: [+1 (845) 633-9611](tel:+18456339611)  
-  **Location**: Dallas, TX, USA 🌟
   
   ---
   
