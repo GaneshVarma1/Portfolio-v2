@@ -27,7 +27,7 @@ export function ExperienceCard({
       className={`p-6 rounded-lg cursor-pointer transition-all duration-300 ${
         isSelected
           ? "bg-blue-500/10 dark:bg-blue-500/5"
-          : "hover:bg-gray-100/50 dark:hover:bg-gray-800/50"
+          : "hover:bg-muted/50"
       }`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -47,15 +47,15 @@ export function ExperienceCard({
           company
         )}
       </h3>
-      <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">
+      <h4 className="text-lg font-semibold text-foreground mb-1">
         {title}
       </h4>
-      <p className="text-sm text-gray-500 dark:text-gray-400 font-mono mb-4">
+      <p className="text-sm text-muted-foreground font-mono mb-4">
         {duration}
       </p>
       <ul className="list-disc list-inside space-y-2 mb-4">
         {description.map((item, index) => (
-          <li key={index} className="text-gray-600 dark:text-gray-300">
+          <li key={index} className="text-muted-foreground">
             {item}
           </li>
         ))}
@@ -64,7 +64,7 @@ export function ExperienceCard({
         {technologies.map((tech, index) => (
           <span
             key={index}
-            className="text-xs px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400"
+            className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground"
           >
             {tech}
           </span>

@@ -14,7 +14,7 @@ export function ExperienceSection() {
     experiences.find((exp) => exp.category === activeTab)?.items || [];
 
   return (
-    <section id="experience" className="py-20 bg-white dark:bg-gray-900">
+    <section id="experience" className="py-20 bg-background">
       <div className="max-w-5xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

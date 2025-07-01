@@ -71,7 +71,7 @@ export function Hero() {
   };
 
   return (
-    <section className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-50 via-gray-50 to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900/20">
+    <section className="min-h-screen relative overflow-hidden bg-gradient-to-br from-background via-background to-blue-50 dark:to-blue-900/20">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl" />
@@ -90,7 +90,7 @@ export function Hero() {
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="w-full md:w-1/2 text-gray-900 dark:text-white space-y-6"
+            className="w-full md:w-1/2 text-foreground space-y-6"
           >
             <div className="space-y-4">
               <JobStatusBadge />
@@ -103,7 +103,7 @@ export function Hero() {
               </h1>
             </div>
 
-            <p className="text-lg text-gray-700 dark:text-gray-300 my-6 leading-relaxed">
+            <p className="text-lg text-muted-foreground my-6 leading-relaxed">
               A passionate Full Stack Software Engineer with 4+ years of
               experience in building scalable applications and creating
               exceptional user experiences.
@@ -118,7 +118,7 @@ export function Hero() {
 
                  
                   {/* Promptly */}
-                  <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-lg text-gray-700 dark:text-gray-300">
+                  <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-lg text-muted-foreground">
                     <span>Building</span>
                     <LinkPreview
                       url="https://beta.promptly.diy"
@@ -130,7 +130,7 @@ export function Hero() {
                     >
                       Promptly
                     </LinkPreview>
-                    <span className="text-sm text-gray-600 dark:text-gray-400">with 10+ AI Models</span>
+                    <span className="text-sm text-muted-foreground/70">with 10+ AI Models</span>
                     <span className="flex items-center gap-2">
                     <img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png"
@@ -149,7 +149,7 @@ export function Hero() {
               </div>
 
                {/* Goodmoney */}
-               <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-lg text-gray-700 dark:text-gray-300">
+               <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-lg text-muted-foreground">
                     <span>Building</span>
                     <LinkPreview
                       url="https://goodmoney.xyz"
@@ -178,13 +178,13 @@ export function Hero() {
 
 
               <div className="flex items-center space-x-2">
-                <span className="text-xl font-bold text-gray-700 dark:text-gray-300">
+                <span className="text-xl font-bold text-foreground">
                   Used by
                 </span>
                 <div>
                   <AvatarCircles numPeople={10} avatarUrls={avatars} />
                 </div>
-                <span className="text-xl font-bold text-gray-700 dark:text-gray-300">
+                <span className="text-xl font-bold text-foreground">
                   Developers
                 </span>
               </div>

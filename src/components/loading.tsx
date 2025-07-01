@@ -5,14 +5,31 @@ import { AppleHelloEnglishEffect } from "@/components/ui/apple-hello-effect";
 
 export function Loading() {
   const [isVisible, setIsVisible] = useState(true);
+  const [animationCompleted, setAnimationCompleted] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    // Fallback timer to ensure loading screen doesn't get stuck
+    const fallbackTimer = setTimeout(() => {
       setIsVisible(false);
-    }, 4000); // Hide after 4 seconds
+    }, 6000); // 6 seconds fallback
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(fallbackTimer);
   }, []);
+
+  const handleAnimationComplete = () => {
+    setAnimationCompleted(true);
+    // Hide loading screen after animation completes with a small delay
+    setTimeout(() => {
+      setIsVisible(false);
+    }, 500);
+  };
+
+  const handleAnimationError = () => {
+    // If animation fails, hide loading screen after 2 seconds
+    setTimeout(() => {
+      setIsVisible(false);
+    }, 2000);
+  };
 
   if (!isVisible) return null;
 
@@ -22,9 +39,8 @@ export function Loading() {
         <AppleHelloEnglishEffect 
           speed={1.1} 
           className="text-primary"
-          onAnimationComplete={() => {
-            console.log("Animation completed");
-          }}
+          onAnimationComplete={handleAnimationComplete}
+          onError={handleAnimationError}
         />
       </div>
     </div>

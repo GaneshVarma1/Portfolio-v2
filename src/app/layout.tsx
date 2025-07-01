@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import '../index.css'
 import { Loading } from '@/components/loading'
 import { Analytics } from '@vercel/analytics/next'
+import { ThemeProvider } from './components/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -70,9 +71,11 @@ export default function RootLayout({
         <link rel="canonical" href="https://srishiram.xyz" />
       </head>
       <body className={inter.className}>
-        <Loading />
-        {children}
-        <Analytics />
+        <ThemeProvider>
+          <Loading />
+          {children}
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -43,12 +43,18 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 mt-auto">
-      <div className="max-w-6xl mx-auto px-4 py-6">
+    <footer className="relative overflow-hidden bg-gradient-to-br from-background via-background to-blue-50 dark:to-blue-900/20 border-t border-border mt-auto">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl" />
+      </div>
+      
+      <div className="relative max-w-6xl mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-600 dark:text-gray-400 text-center md:text-left">
+          <p className="text-muted-foreground text-center md:text-left">
             Designed by{" "}
-            <span className="font-medium text-gray-900 dark:text-white">
+            <span className="font-medium text-foreground">
               Sri Ganesh Shiramshetty
             </span>
           </p>
