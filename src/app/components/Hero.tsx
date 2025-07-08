@@ -10,6 +10,7 @@ import { LinkPreview } from "./ui/link-preview";
 import { TiltedCard } from "./ui/tilted-card";
 import { avatars } from "../data/avatars";
 import { MediaButton } from "@/components/ui/media-button";
+import { PORTFOLIO_ASSETS } from "../../lib/cloudinary";
 
 const emojis = [
   { emoji: "💻", delay: 0, duration: 4, position: { x: 75, y: 20 } },
@@ -124,7 +125,7 @@ export function Hero() {
                       url="https://beta.promptly.diy"
                       className="font-bold text-blue-500 hover:text-blue-600  transition-colors"
                       isStatic={true}
-                      imageSrc="/Promptly.gif"
+                      imageSrc={PORTFOLIO_ASSETS.promptly}
                       width={200}
                       height={125}
                     >
@@ -155,7 +156,7 @@ export function Hero() {
                       url="https://goodmoney.xyz"
                       className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
                       isStatic={true}
-                      imageSrc="/goodmoneyhero.gif"
+                      imageSrc={PORTFOLIO_ASSETS.goodmoney}
                       width={200}
                       height={125}
                     >
@@ -240,7 +241,7 @@ export function Hero() {
             {/* Hero Image */}
             <div className="relative mt-0">
               <TiltedCard
-                imageSrc="/IMG_2576.png"
+                imageSrc={PORTFOLIO_ASSETS.heroImage}
                 altText="Sri Ganesh Shiramshetty"
                 containerHeight="384px"
                 containerWidth="320px"
