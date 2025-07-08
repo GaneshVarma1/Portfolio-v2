@@ -25,7 +25,7 @@ export function ProjectCard({
       viewport={{ once: true }}
       className="bg-card rounded-lg overflow-hidden border border-border group"
     >
-      {/* Image with 16:9 aspect ratio */}
+      {/* Image/Video with 16:9 aspect ratio */}
       <div className="relative overflow-hidden aspect-w-16 aspect-h-9">
         <motion.div
           whileHover={{ scale: 1.05 }}
@@ -33,7 +33,18 @@ export function ProjectCard({
           className="relative h-full"
         >
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          <img src={image} alt={title} className="w-full h-full object-cover" />
+          {image.includes('/video/upload/') ? (
+            <video 
+              src={image} 
+              className="w-full h-full object-cover"
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+            />
+          ) : (
+            <img src={image} alt={title} className="w-full h-full object-cover" />
+          )}
         </motion.div>
       </div>
       <div className="p-6">
