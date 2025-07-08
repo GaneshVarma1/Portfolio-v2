@@ -1,3 +1,5 @@
+import { PORTFOLIO_ASSETS } from "../../lib/cloudinary";
+
 export const projects = [
     {
       title: "ReactWind",
@@ -15,7 +17,7 @@ export const projects = [
       ],
       github: "https://github.com/GaneshVarma1/",
       demo: "https://reactwind.com",
-      image: "reactwind.gif",
+      image: PORTFOLIO_ASSETS.reactwind,
     },
     {
       title: "Goodmoney AI",
@@ -36,7 +38,7 @@ export const projects = [
       ],
       github: "https://github.com/GaneshVarma1/",
       demo: "https://goodmoney.xyz",
-      image: "goodmoney.gif",
+      image: PORTFOLIO_ASSETS.goodmoney,
     },
     {
       title: "Friend AI",
@@ -56,7 +58,7 @@ export const projects = [
       ],
       github: "https://github.com/GaneshVarma1/",
       demo: "https://friend-ai-ten.vercel.app/",
-      image: "FriendAi.gif",
+      image: PORTFOLIO_ASSETS.friendai,
     },
     {
       title: "MME Worldwide",
@@ -64,7 +66,7 @@ export const projects = [
         "A newly redefined Event Management and Hospitality agency, distinguished for curating exceptional and premium experiences with unparalleled professionalism.",  tech: ["JavaScript", "CSS", "HTML", "SCSS", "PHP", "ReactJS"],
       github: "https://github.com/GaneshVarma1",
       demo: "https://mmecreativepartners.com/",
-      image: "mme.gif",
+      image: PORTFOLIO_ASSETS.mme,
     },
     {
       title: "CandyStore",
@@ -85,7 +87,7 @@ export const projects = [
       ],
       github: "https://github.com/GaneshVarma1/",
       demo: "https://candistore.vercel.app/",
-      image: "candy.gif",
+      image: PORTFOLIO_ASSETS.candy,
     },
     {
       title: "Tesla Clone",
@@ -94,7 +96,7 @@ export const projects = [
       tech: ["HTML", "SCSS", "JavaScript"],
       github: "https://github.com/GaneshVarma1/Tesla-website",
       demo: "https://ganeshvarma1.github.io/Tesla-website/",
-      image: "tesla.gif",
+      image: PORTFOLIO_ASSETS.tesla,
     },
     {
       title: "Fridge to Feast",
@@ -103,7 +105,7 @@ export const projects = [
       tech: ["ReactJS", "NextJS", "APIDB", "Hooks", "Vue.js"],
       github: "https://github.com/GaneshVarma1/Fridge-to-Feast",
       demo: "https://fridge-to-feastapp.vercel.app//",
-      image: "fridgetofood.gif",
+      image: PORTFOLIO_ASSETS.fridgetofood,
     },
     {
       title: "Netflix Clone",
@@ -112,7 +114,7 @@ export const projects = [
       tech: ["Vue.js", "React", "NextJS", "API"],
       github: "https://github.com/GaneshVarma1/Netflix-clone",
       demo: "https://srinetflix.vercel.app/",
-      image: "netflix.gif",
+      image: PORTFOLIO_ASSETS.netflix,
     },
     {
       title: "MME Rental Ecommerce",
@@ -120,7 +122,7 @@ export const projects = [
       tech: ["Wordpress", "Woo-Commerce", "JavaScript", "PHP", "Elementor"],
       github: "https://github.com",
       demo: "https://rentals.mmeink.com",
-      image: "mmerental.gif",
+      image: PORTFOLIO_ASSETS.mmerental,
     },
     {
       title: "GreenLeaf Resort",
@@ -129,7 +131,7 @@ export const projects = [
       tech: ["HTML", "Javascript", "SCSS", "Gateway Integration"],
       github: "https://github.com/GaneshVarma1/Greenleaf",
       demo: "https://greenleaf-three.vercel.app/",
-      image: "kerala.gif",
+      image: PORTFOLIO_ASSETS.kerala,
     },
     {
       title: "Flappy Bird Game",
@@ -138,16 +140,9 @@ export const projects = [
       tech: ["Javascript", "HTML", "CSS"],
       github: "https://github.com/GaneshVarma1/flappy-bird",
       demo: "https://ganeshvarma1.github.io/flappy-bird/",
-      image: "flappy.gif",
+      image: PORTFOLIO_ASSETS.flappy,
     },
-    {
-      title: "Flownia",
-      description: "SAAS Application Re-designed total website from start.",
-      tech: ["HTML", "Bootstrap", "CSS", "Javascript"],
-      github: "https://github.com/GaneshVarma1/Flownia",
-      demo: "https://ganeshvarma1.github.io/Flownia/",
-      image: "flownia.gif",
-    },
+
     {
       title: "FiDi Hospitality",
       description:
@@ -155,7 +150,7 @@ export const projects = [
       tech: ["JavaScript", "CSS", "HTML", "SCSS", "PHP"],
       github: "https://github.com/GaneshVarma1",
       demo: "https://www.fidihospitality.com",
-      image: "fidi.gif",
+      image: PORTFOLIO_ASSETS.fidi,
     },
     {
       title: "Rocket Apply (Start-up)",
@@ -164,6 +159,6 @@ export const projects = [
       tech: ["NextJs", "React", "AI", "TailwindCSS"],
       github: "https://github.com",
       demo: "https://rocketapply.vercel.app/",
-      image: "rocketapply.gif",
+      image: PORTFOLIO_ASSETS.rocketapply,
     },
   ];
