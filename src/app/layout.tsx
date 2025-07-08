@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../index.css'
 import { Loading } from '@/components/loading'
+import { Analytics } from '@vercel/analytics/next'
+import { ThemeProvider } from './components/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Sri Ganesh Shiramshetty | Full Stack Software Engineer',
     description: 'Full Stack Software Engineer with 4+ years of experience in building scalable applications and creating exceptional user experiences.',
-    images: ['/og-image.png'],
+    images: ['/IMG_2576.png'],
     creator: '@varmaaa_x',
   },
   robots: {
@@ -69,8 +71,11 @@ export default function RootLayout({
         <link rel="canonical" href="https://srishiram.xyz" />
       </head>
       <body className={inter.className}>
-        <Loading />
-        {children}
+        <ThemeProvider>
+          <Loading />
+          {children}
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   )

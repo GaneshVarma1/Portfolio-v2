@@ -5,7 +5,7 @@ function Preview() {
   return (
     <section
       id="playground"
-      className="w-full h-[500px] relative bg-white dark:bg-gray-900 z-0 overflow-hidden"
+      className="w-full h-[500px] relative bg-background z-0 overflow-hidden"
     >
       <div className="w-[98%] h-[98%] mx-auto relative">
         <Gravity
