@@ -17,11 +17,11 @@ const AvatarCircles = ({
 }: AvatarCirclesProps) => {
   return (
     <div className={cn("z-10 flex -space-x-4 rtl:space-x-reverse", className)}>
-      {avatarUrls.map((url, index) => (
+      {avatarUrls.slice(0, numPeople || avatarUrls.length).map((avatar, index) => (
         <img
           key={index}
           className="h-10 w-10 rounded-full border-2 border-white dark:border-gray-800 object-cover"
-          src={url.imageUrl}
+          src={avatar.imageUrl}
           width={40}
           height={40}
           alt={`Avatar ${index + 1}`}

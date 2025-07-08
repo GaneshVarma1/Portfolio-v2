@@ -178,26 +178,33 @@ export function Hero() {
                   </div>
 
 
-              <div className="flex items-center space-x-2">
-                <LinkPreview
-                  url="#"
-                  className="text-xl font-bold text-blue-500"
-                  isStatic={true}
-                  imageSrc="/reactwind.gif"
-                  width={200}
-                  height={125}
-                >
-                  ReactWind
-                </LinkPreview>
-                <span className="text-xl font-bold text-foreground">
-                  Used by
-                </span>
-                <div>
-                  <AvatarCircles numPeople={10} avatarUrls={avatars} />
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+                <div className="flex items-center gap-2">
+                  <span className="text-lg sm:text-xl font-bold text-foreground">
+                    Built
+                  </span>
+                  <LinkPreview
+                    url="#"
+                    className="text-lg sm:text-xl font-bold text-blue-500"
+                    isStatic={true}
+                    imageSrc={PORTFOLIO_ASSETS.reactwind}
+                    width={200}
+                    height={125}
+                  >
+                    ReactWind
+                  </LinkPreview>
                 </div>
-                <span className="text-xl font-bold text-foreground">
-                  Developers
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="text-lg sm:text-xl font-bold text-foreground">
+                    Helped
+                  </span>
+                  <div>
+                    <AvatarCircles numPeople={10} avatarUrls={avatars} />
+                  </div>
+                  <span className="text-lg sm:text-xl font-bold text-foreground">
+                    Devs
+                  </span>
+                </div>
               </div>
             </div>
 
