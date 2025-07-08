@@ -3,7 +3,6 @@ import { useTheme } from "./ThemeProvider";
 
 export function AnimatedCursorComponent() {
   const { theme } = useTheme();
-  console.log("Current theme:", theme);
 
   const cursorColor = theme === "dark" ? "#ffffff" : "#ffffff";
 
