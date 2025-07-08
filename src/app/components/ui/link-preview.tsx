@@ -68,13 +68,26 @@ export const LinkPreview = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={imageSrc}
-              width={width}
-              height={height}
-              className="rounded-lg"
-              alt="preview"
-            />
+            {imageSrc.includes('.mp4') ? (
+              <video
+                src={imageSrc}
+                width={width}
+                height={height}
+                className="rounded-lg"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            ) : (
+              <img
+                src={imageSrc}
+                width={width}
+                height={height}
+                className="rounded-lg"
+                alt="preview"
+              />
+            )}
           </a>
         </motion.div>
       </HoverCardPrimitive.Content>
