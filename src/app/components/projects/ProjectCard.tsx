@@ -33,7 +33,7 @@ export function ProjectCard({
           className="relative h-full"
         >
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          {image.includes('/video/upload/') ? (
+          {image && image.includes('/video/upload/') ? (
             <video 
               src={image} 
               className="w-full h-full object-cover"
@@ -42,8 +42,12 @@ export function ProjectCard({
               muted 
               playsInline
             />
-          ) : (
+          ) : image ? (
             <img src={image} alt={title} className="w-full h-full object-cover" />
+          ) : (
+            <div className="w-full h-full bg-muted flex items-center justify-center">
+              <span className="text-muted-foreground">No image available</span>
+            </div>
           )}
         </motion.div>
       </div>

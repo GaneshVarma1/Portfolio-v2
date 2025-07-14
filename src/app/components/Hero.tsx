@@ -149,18 +149,18 @@ export function Hero() {
                 </div>
               </div>
 
-               {/* Goodmoney */}
+               {/* Built it AI Code writer */}
                <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-lg text-muted-foreground">
                     <span>Building</span>
                     <LinkPreview
-                      url="https://goodmoney.xyz"
+                      url="https://builtit-hazel.vercel.app/"
                       className="font-bold text-blue-500 hover:text-blue-600 transition-colors"
                       isStatic={true}
-                      imageSrc={PORTFOLIO_ASSETS.goodmoney}
+                      imageSrc={PORTFOLIO_ASSETS.builtit}
                       width={200}
                       height={125}
                     >
-                      Goodmoney
+                      Built it
                     </LinkPreview>
                     <span className="flex items-center gap-2">
                       <img

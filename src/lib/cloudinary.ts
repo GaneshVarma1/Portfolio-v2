@@ -70,7 +70,7 @@ export const PORTFOLIO_ASSETS = {
 
   // Project GIFs and Videos - using real Cloudinary URLs
   promptly: "https://res.cloudinary.com/dv9y8selw/image/upload/v1752011144/Promptly_qqa4zg.gif",
-  goodmoney: "https://res.cloudinary.com/dv9y8selw/video/upload/v1752011130/goodmoney_jr5upd.mp4",
+  builtit: "https://res.cloudinary.com/dv9y8selw/video/upload/v1752523634/Builtit_rxoyib.mp4",
   doc: "https://res.cloudinary.com/dv9y8selw/image/upload/v1752011151/Doc_el2jc0.gif",
   fidi: "https://res.cloudinary.com/dv9y8selw/video/upload/v1752011127/fidi_dymavj.mp4",
   flappy: "https://res.cloudinary.com/dv9y8selw/image/upload/v1752011157/flappy_ep1jh9.gif",
