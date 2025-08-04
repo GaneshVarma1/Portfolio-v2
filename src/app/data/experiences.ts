@@ -62,6 +62,19 @@ export const experiences = [
         ],
         technologies: ["React", "Python", "PostgreSQL", "Docker", "Jenkins"],
       },
+      {
+        title: "Software Enginner",
+        company: "We-Built",
+        companyUrl: "#",
+        duration: "2019 Aug - 2022 Aug",
+        description: [
+          "Engineered robust full-stack applications utilizing JavaScript and HTML/CSS.",
+          "Partnered with interdisciplinary teams to deliver innovative, high-quality solutions.",
+          "Designed and launched event websites with integrated ticket reservation functionality.",
+          "Automated deployment workflows by implementing CI/CD pipelines with Jenkins.",
+        ],
+        technologies: ["React", "TailwindCSS", "PostgreSQL", "Docker", "HTML"],
+      },
       
     ],
   },
